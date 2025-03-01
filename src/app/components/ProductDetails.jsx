@@ -9,7 +9,7 @@ export default function ProductDetails() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch(`https://ecommerce-server-eta-seven.vercel.app/products/${id}`)
+    fetch(`https://ecommerce-server-pi-eosin.vercel.app/products/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data))
       .catch((err) => console.error("Error fetching product details:", err));
@@ -21,7 +21,7 @@ export default function ProductDetails() {
     setMessage("");
 
     try {
-      const response = await fetch("https://ecommerce-server-eta-seven.vercel.app/cart", {
+      const response = await fetch("   https://ecommerce-server-pi-eosin.vercel.app/cart", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

@@ -6,7 +6,7 @@ export default function HomePage() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://ecommerce-server-eta-seven.vercel.app/products")
+    fetch("   https://ecommerce-server-pi-eosin.vercel.app/products")
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.error("Error fetching products:", err));

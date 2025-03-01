@@ -12,5 +12,6 @@ export default function ProductCard({ product }) {
         </button>
       </Link>
     </div>
+    
   );
 }

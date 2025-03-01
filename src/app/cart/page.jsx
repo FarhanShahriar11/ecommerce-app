@@ -7,14 +7,14 @@ export default function CartPage() {
   const router = useRouter(); // Initialize the router
 
   useEffect(() => {
-    fetch("https://ecommerce-server-eta-seven.vercel.app/cart")
+    fetch("https://ecommerce-server-pi-eosin.vercel.app/cart")
       .then((res) => res.json())
       .then((data) => setCart(data))
       .catch((err) => console.error("Error fetching cart:", err));
   }, []);
 
   const removeFromCart = (id) => {
-    fetch(`https://ecommerce-server-eta-seven.vercel.app/cart/${id}`, { method: "DELETE" })
+    fetch(`https://ecommerce-server-pi-eosin.vercel.app/cart/${id}`, { method: "DELETE" })
       .then((res) => res.json())
       .then(() => setCart(cart.filter((item) => item._id !== id)))
       .catch((err) => console.error("Error removing item:", err));

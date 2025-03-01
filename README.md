@@ -14,7 +14,7 @@ pnpm dev
 bun dev
 ```
 
-Open [  https://ecommerce-server-pi-eosin.vercel.app](  https://ecommerce-server-pi-eosin.vercel.app) with your browser to see the result.
+Open [  https://ecommerce-server-phi.vercel.app](  https://ecommerce-server-phi.vercel.app) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 

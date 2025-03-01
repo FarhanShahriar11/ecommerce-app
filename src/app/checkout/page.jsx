@@ -8,7 +8,7 @@ export default function CheckoutPage() {
 
   // Fetch cart items when the page loads
   useEffect(() => {
-    fetch("https://ecommerce-server-pi-eosin.vercel.app/cart")
+    fetch("https://ecommerce-server-phi.vercel.app/cart")
       .then((res) => res.json())
       .then((data) => setCartItems(data))
       .catch((err) => console.error("Error fetching cart:", err));
@@ -20,7 +20,7 @@ export default function CheckoutPage() {
       return;
     }
 
-    fetch("   https://ecommerce-server-pi-eosin.vercel.app/checkout", {
+    fetch("   https://ecommerce-server-phi.vercel.app/checkout", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ userInfo, items: cartItems }),
